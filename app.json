@@ -1,0 +1,38 @@
+{
+    "name": "PDisk Uploader Bot",
+    "description": "Upload on Pdisk...",
+    "keywords": [
+        "telegram",
+        "pdisk",
+        "shortner"
+    ],
+    "website": "https://telegram.me/MyTestBotZ",
+    "repository": "https://github.com/OO7ROBot/pdisk_uploader",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token (must add)",
+            "value": ""
+        },
+        "PDISK_API_KEY": {
+            "description": "Get this from https://www.pdisk.me/use-api (must change)",
+            "value": ""
+        },
+        "THUMB_URL": {
+            "description": "Enter the permanent thumbnail image url can use this @TGraphXbot",
+            "value" : "",
+            "required": false
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
